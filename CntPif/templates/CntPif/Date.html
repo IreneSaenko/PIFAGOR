@@ -1,0 +1,47 @@
+{% extends "MainApp/wrapper.html"%}
+
+{%block content%}
+<div class="container" id="result" style="background: url(/static/images/stars.jpg)">
+<h3> Результаты расчёта:</h3>
+    <div>
+<table class='tb'>
+	<tbody>
+  <tr>
+    <td>{{lst1.0}}</td>
+    <td>{{lst1.3}}</td>
+    <td>{{lst1.6}}</td>
+  </tr>
+  <tr>
+    <td>{{lst1.1}}</td>
+    <td>{{lst1.4}}</td>
+    <td>{{lst1.7}}</td>
+  </tr>
+   <tr>
+    <td>{{lst1.2}}</td>
+    <td>{{lst1.5}}</td>
+    <td>{{lst1.8}}</td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div class="description">
+<h4>1.Сила характера</h4>
+<p> {{res.0}}</p>
+<h4>2.Энергия человека</h4>
+<p> {{res.1}}</p>
+<h4>3.Способности к познанию, наукам</h4>
+<p> {{res.2}}</p>
+<h4>4.Потенциал здоровья</h4>
+<p> {{res.3}}</p>
+<h4>5.Интуиция и логика</h4>
+<p> {{res.4}}</p>
+<h4>6.Склонность физическому к труду</h4>
+<p> {{res.5}}</p>
+<h4>7.Удачливость</h4>
+<p> {{res.6}}</p>
+<h4>8.Чувство долга</h4>
+<p> {{res.7}}</p>
+<h4>9.Память и интеллект</h4>
+<p> {{res.8}}</p>
+</div>
+{%endblock%}
