@@ -1,0 +1,9 @@
+{% extends "MainApp/wrapper.html"%}
+
+{%block content%}
+<div class="container" id="result">
+    <h3>Нажми на магический шар и получи предсказание</h3>
+   <a href="/Predict/prediction"> <p id="predict"><img src="/static/images/magic.gif"></p></a>
+    <H3 style="color:white;">{{pred1}}</H3>
+</div>
+{%endblock%}
