@@ -1,0 +1,13 @@
+﻿{% extends "MainApp/wrapper.html"%}
+
+{%block content%}
+<div class="container" id="forma1">
+ <p>{{username}}</p>
+ <a href="logout/" style="color: rgba(255,255,255,0.5);">Выход</a>
+</div>
+<script type="text/javascript">
+setTimeout(function() {
+ window.location.href = "/";
+}, 4000);
+</script>
+{%endblock%}

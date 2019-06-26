@@ -1,0 +1,14 @@
+{% extends "MainApp/wrapper.html"%}
+
+{%block content%}
+<div class="container" id="forma">
+ <h2>Регистрация</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button id="sub1" type="submit">Отправить</button>
+  </form>
+    <p> <a href="/" style="color: rgba(255,255,255,0.5); margin-left:10px;">На главную</a></p>
+</div>
+
+{%endblock%}
