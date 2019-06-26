@@ -1,0 +1,21 @@
+{% extends "MainApp/wrapper.html"%}
+
+{%block content%}
+<div class="container" id="forma" >
+    <H3>Если у вас возникли вопросы или предложения, вы можете поделиться ими здесь:</H3>
+    <form method="post"  {%if not_val%} action="" {%else%} action="Result/" {%endif%} name="Answer">
+        {% csrf_token %}
+        <p style="color:red; font-size:20px;">{{warn}}</p>
+        <p>Тема обращения:</p>
+        <p> <input type="text"  class="input-objects" size="30" name="Topic"></p>
+         <p>Текст:</p>
+        <p><textarea type="text"  class="input-objects" name="Text"></textarea></p>
+         <p>Имя:</p>
+        <p><input type="text"  class="input-objects" size="30" name="Name"></p>
+         <p>Email:</p>
+        <p><input type="text"  class="input-objects" name="Email"></p>
+        <p> <input class="submit" value="Отправить сообщение" type="submit"> </p>
+    </form>
+ <p> <a href="/" style="color: rgba(255,255,255,0.5); margin-left:auto;">На главную</a></p>
+</div>
+{%endblock%}

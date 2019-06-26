@@ -1,0 +1,12 @@
+{% extends "MainApp/wrapper.html"%}
+
+{%block content%}
+<div class="container" id="forma" >
+    <p> {{name}} ,ваше сообщение отправлено!</p>
+    </div>
+<script type="text/javascript">
+setTimeout(function() {
+ window.location.href = "/";
+}, 2000);
+</script>
+{%endblock%}
